@@ -1,0 +1,432 @@
+<div class="container">
+  <div class="">
+    <section class="bitcoin-section">
+      <div class="row">
+        <aside class="col-lg-5 col-md-5 col-sm-12 col-12">
+          <aside class="mint-steps">
+            <div class="mint-content p-3 mb-4">
+              <div class="mint-heading align-items-center d-flex">
+                <i class="fa fa-bell" aria-hidden="true"></i> <span class="pull-right">&nbsp; &nbsp;Currently in Beta Testnet - <span class="orange-text">Do not send real Bitcoin</span></span>
+              </div>
+              <div class="mint-text">
+                <p>
+
+                </p>
+              </div>
+            </div>
+          </aside>
+          <aside class="mint-steps">
+            <div class="mint-content p-3 mb-4 bg-white">
+              <div class='row small pt-1'>
+                <div class="col-lg-4 d-flex">
+                  <div class="mr-3 mb-3">
+                    <img src="./../../../assets/images/platform-icon.png" alt="platform-icon"/>
+                  </div>
+                  <div>
+                    <a href="">0*9b4a...9a6f</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 d-flex">
+                  <div class="mr-3 mb-3">
+                    <img src="./../../../assets/images/bit-icon.png" alt="bit-icon"/>
+                  </div>
+                  <div>
+                    <p class='mb-0'>BTCpx 50</p>
+                    <p> $5254.568 </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 d-flex">
+                  <div class="mr-3 mb-3">
+                    <img class='text-secondary' src="./../../../assets/images/wbtc-logo.png" alt="bit-icon"/>
+                  </div>
+                  <div>
+                    <p class='mb-0'>WBTC</p>
+                    <p> $5254.568 </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <aside class="mint-steps">
+            <div class="mint-content p-3 mb-4">
+              <div class="mint-text">
+                <p>
+                  The Unwrapped Uniswap pool includes a 50:50 
+                  pool of BTCpx and WBTC.  WBTC is one of the most
+                  utilized tokens in the ecosystem and allows its holders
+                  to earn rewards in PRXY without exposure to 
+                  impermanent loss.
+                </p>
+              </div>
+            </div>
+            <div class="mint-content p-3 mobile-none">
+              <div class="mint-heading align-items-center d-flex">
+                Analytics <a class="ml-3 orange-text" [routerLink]="['/transaction-history']" routerLinkActive="active">Transaction History</a>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 btc-section">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="row">
+                      <h6  class="light-grey-color">Total BTCpx Supply</h6>
+                      <div class="input-section border-0">
+                        <div class="row">
+                          <div class="col-sm-12 btc-btn d-flex justify-content-between align-items-center">
+                            <div class="mb-3">
+                              <input type="text" class="w-100 form-control-lg pl-3 no-border" id="availableBtcpxSupply" placeholder="0.0 BTCpx" readonly="" [(ngModel)]="redeemPage.availableBtcpxSupply" name="availableBtcpxSupply" #availableBtcpxSupply="ngModel">
+                              <span class="pl-3 light-grey-color text-nowrap">= {{redeemPage.usdEquivalentOfBtcpxSupply}} USD</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <input type="text" class="form-control form-control-lg mb-3" placeholder="2323" readonly value="{{redeemPage.availableBtcpxSupply}}"> -->
+                      <h6  class="light-grey-color">Contract address</h6>
+                      <h6><a href="https://goerli.etherscan.io/token/0x785E88c651356775BA4469F06C0d4378EA9d048B" target="_blank">Link to etherscan</a> &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="mobile-row">
+                      <h6  class="light-grey-color">Total BTC in Custody</h6>
+                      <div class="input-section border-0">
+                        <div class="row">
+                          <div class="col-sm-12 btc-btn d-flex justify-content-between align-items-center">
+                            <div class="mb-3">
+                              <input type="text" class="w-100 form-control-lg pl-3 no-border" placeholder="0.0 BTC" readonly="" [(ngModel)]="redeemPage.availableBtcCustodyBalance" name="availableBtcCustodyBalance" #availableBtcCustodyBalance="ngModel">
+                              <span class="pl-3 light-grey-color text-nowrap">= {{redeemPage.usdEquivalentOfBtcCustodyBalance}} USD</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h6 class="light-grey-color">Hex Trust</h6>
+                      <h6><a href="https://hextrust.com/custody-services/safekeeping#safekeeping-6" target="_blank">Insurance Coverage</a> &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></h6>
+                      <!-- <input type="text" class="form-control form-control-lg mb-3" placeholder="2323" readonly value="454"> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </aside>
+        <aside class="col-lg-7 col-md-7 col-sm-12 col-12">
+        	<div id='tabs' class="design-process-content pt-5 pb-3 pl-5 pr-5 mb-5 mobile-view-tabs">
+        		<ul class="nav nav-pills" role="tablist">
+        			<li class="nav-item text-18">
+        				<a class="nav-link active" data-toggle="pill" href="#deposit">Deposit</a>
+        			</li>
+        			<li class="nav-item text-18">
+        				<a class="nav-link" data-toggle="pill" href="#withdraw">Withdraw</a>
+        			</li>
+        			<li class="nav-item text-18">
+        				<a class="nav-link" data-toggle="pill" href="#stats">Stats</a>
+        			</li>
+        		</ul> 
+  <div class="tab-content">
+    <div id="deposit" class="container tab-pane active">
+
+    	<div class="pt-3">
+        				<div class="bitcoin-form">
+        					<form #redeemAmountForm="ngForm">
+        						<div class="bitcoin-form-row">
+        							<div class="form-group">
+        								<p for="btcpxAmount" class="d-flex">Amount of BTCpx<span class="ml-auto">Available: <span class="blue-text">{{redeemPage.availableBtcpxBalance}} BTCpx</span></span></p>
+        								<div class="input-section">
+        									<div class="row">
+        										<div class="col-sm-12 btc-btn d-flex justify-content-between align-items-center">
+        											<div class="d-flex align-items-center justify-content-between w-100 pr-2">
+        												<div class="">
+        													<input type="text" class="form-control first-input-ui form-control-xs pl-3 pr-5 border-0" id="btcpxAmount" placeholder="1.0000000 BTCpx" [(ngModel)]="redeemPage.btcpxAmount" name="btcpxAmount" #btcpxAmount="ngModel" pattern="^[0-9]*(\.[0-9]{0,8})?$"  [disabled]="!gotNetworkFees">
+        													<span class="pl-3 convert-price-text">= {{redeemPage.usdEquivalentOfBtcpxAmount}} USD</span>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        						<div class="bitcoin-form-row">
+        							<div class="form-group">
+        								<p for="btcAmount" class="d-flex">Your Estimated Rewards
+        									<i class="fa fa-question-circle-o light-grey-color" aria-hidden="true"></i>
+        								</p>
+        								<div class="input-section border-blue3">
+        									<div class="row">
+        										<div class="col-sm-12 btc-btn d-flex justify-content-between align-items-center">
+        											<div class="d-flex align-items-center">
+        												<div class="">
+        													<input type="text" class="form-control first-input-ui form-control-xs pl-3 pr-5 border-0" id="btcAmount"  readonly [(ngModel)]="redeemPage.btcAmount" name="btcAmount" #btcAmount="ngModel">
+        													<span class="pl-3 convert-price-text" class='text-primary' style="position: absolute;top:0;margin-left:5px;"> 1,829.58 AMPL in 30 days </span>
+        													<span class="pl-3 convert-price-text">= 18300 USD</span>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+
+        							</div>
+        						</div>
+        						<div class='row bg-connect'>
+        							<div class="col-sm-5 offset-sm-1 text-white pt-3 col-xs-6">
+        								Connect your ethereum wallet	
+        							</div>
+        							<div class="offset-sm-2 col-sm-4 pt-3 col-xs-6 connect-btn-container">
+                        <button type="button" class="btn btn-primary form-control-lg connect-btn" >
+                       Connect </button>
+                     </div>
+                   </div>
+        						<div class="bitcoin-form-row mt-5">
+        							<div class="form-group justify-content-end d-flex">
+        								<button type="button" class="btn btn-secondary disabled form-control-lg">
+        									Deposit
+        								</button>
+        								</div>
+        							</div>
+        						</form>
+        					</div>
+        				</div>
+
+    </div>
+    <div id="withdraw" class="container tab-pane fade">
+    	<div class="pt-3">
+        				<div class="bitcoin-form">
+        					<form #redeemAmountForm="ngForm">
+        						<div class="bitcoin-form-row">
+        							<div class="form-group">
+        								<p for="btcpxAmount" class="d-flex">Amount to Withdraw<span class="ml-auto">Deposited: <span class="blue-text">{{redeemPage.availableBtcpxBalance}} BTCpx</span></span></p>
+        								<div class="input-section">
+        									<div class="row">
+        										<div class="col-sm-12 btc-btn d-flex justify-content-between align-items-center">
+        											<div class="d-flex align-items-center justify-content-between w-100 pr-2">
+        												<div class="">
+        													<input type="text" class="form-control first-input-ui form-control-xs pl-3 pr-5 border-0" id="btcpxAmount" placeholder="1.0000000 BTCpx" [(ngModel)]="redeemPage.btcpxAmount" name="btcpxAmount" #btcpxAmount="ngModel" pattern="^[0-9]*(\.[0-9]{0,8})?$" [disabled]="!gotNetworkFees">
+        													<span class="pl-3 convert-price-text">= {{redeemPage.usdEquivalentOfBtcpxAmount}} USD</span>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        								<p class="d-flex mt-2">Rewards Claimed :<span >0.01 AMPL</span></p>
+        							</div>
+        						</div>
+        						<div class="bitcoin-form-row mt-5">
+        							<div class="form-group justify-content-end d-flex">
+        								<button type="button" class="btn btn-secondary disabled form-control-lg">
+        									Withdraw
+        								</button>
+        								</div>
+        							</div>
+        						</form>
+        					</div>
+        				</div>
+
+
+    </div>
+    <div id="stats" class="container tab-pane fade">
+    	<div class="row   pt-3">
+    		<div class="col-sm-6  justify-content-between align-items-center">
+    			<div class="input-section pt-3 pl-3 pr-3 pb-3">
+    				<p class='mb-0'>Total Rewards</p>
+    				<p class='mb-0'>1,520,502.87 AMPL</p>
+    			</div>
+    		</div>
+    		<div class="col-sm-6  justify-content-between align-items-center">
+    			<div class="input-section pt-3 pl-3 pr-3 pb-3">
+    				<p class='mb-0'>Total Deposits</p>
+    				<p class='mb-0'>1,520,502.87 USD</p>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="row   pt-3">
+    		<div class="col-sm-6  justify-content-between align-items-center">
+    			<div class="input-section pt-3 pl-3 pr-3 pb-3">
+    				<p class='mb-0'>Locked Rewards</p>
+    				<p class='mb-0'>1,520,502.87 AMPL</p>
+    			</div>
+    		</div>
+    		<div class="col-sm-6  justify-content-between align-items-center">
+    			<div class="input-section pt-3 pl-3 pr-3 pb-3">
+    				<p class='mb-0'>APY</p>
+    				<p class='mb-0'>70%</p>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="row   pt-3">
+    		<div class="col-sm-6  justify-content-between align-items-center">
+    			<div class="input-section pt-3 pl-3 pr-3 pb-3">
+    				<p class='mb-0'>Program duration</p>
+    				<p class='mb-0'> 86.2 days left </p>
+    			</div>
+    		</div>
+    		<div class="col-sm-6  justify-content-between align-items-center">
+    			<div class="input-section pt-3 pl-3 pr-3 pb-3">
+    				<p class='mb-0'> Reward unlock rate </p>
+    				<p class='mb-0'> 506,530.47 AMPL / month </p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </div>
+
+        		
+        	</div>
+
+  
+  
+ 
+
+        	<!-- Tab panes -->
+        	<div class="tab-content">
+        		<div id="deposit" class="container tab-pane active"><br>
+        			
+        			</div>
+        		<div id="withdraw" class="container tab-pane fade"><br>
+        			
+              <div class="mint-content p-3 mt-3 mb-3 d-md-none">
+                <div class="mint-heading align-items-center d-flex">
+                    Analytics <a class="ml-3 orange-text" [routerLink]="['/transaction-history']" routerLinkActive="active">Transaction History</a>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 btc-section">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div class="mobile-row">
+                        <h6 class="light-grey-color">Total BTCpx Supply</h6>
+                        <div class="input-section border-0">
+                          <div class="row">
+                            <div class="col-sm-12 btc-btn d-flex justify-content-between align-items-center">
+                              <div class="mb-3">
+                                <input type="text" class="w-100 form-control-lg pl-3" id="m-availableBtcpxSupply" placeholder="0.0 BTCpx" readonly="" [(ngModel)]="redeemPage.availableBtcpxSupply" name="availableBtcpxSupply" #availableBtcpxSupply="ngModel">
+                                <span class="pl-3 light-grey-color text-nowrap">= {{redeemPage.usdEquivalentOfBtcpxSupply}} USD</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h6 class="light-grey-color">Contract address</h6>
+                        <h6><a href="https://goerli.etherscan.io/token/0x785E88c651356775BA4469F06C0d4378EA9d048B" target="_blank">Link to etherscan</a> &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></h6>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div class="mobile-row">
+                        <h6 class="light-grey-color">Total BTC in Custody</h6>
+                        <div class="input-section border-0">
+                          <div class="row">
+                            <div class="col-sm-12 btc-btn d-flex justify-content-between align-items-center">
+                              <div class="mb-3">
+                                <input type="text" class="w-100 form-control-lg pl-3" placeholder="0.0 BTC" readonly="" [(ngModel)]="redeemPage.availableBtcCustodyBalance" name="availableBtcCustodyBalance" #availableBtcCustodyBalance="ngModel">
+                                <span class="pl-3 light-grey-color text-nowrap">= {{redeemPage.usdEquivalentOfBtcCustodyBalance}} USD</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h6 class="light-grey-color">Hex Trust</h6>
+                        <h6><a href="https://hextrust.com/custody-services/safekeeping#safekeeping-6" target="_blank">Insurance Coverage</a> &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mint-content p-5">
+                <div class="mint-heading align-items-center d-flex">
+                    Transaction Confirmations
+                </div>
+                <div class="light-grey-color row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12 transaction-div" *ngFor="let tx of transactions">
+                    <h6><span class="blue-text">Type </span> {{tx.type ? 'Mint' : 'Redeem'}}</h6>
+                    <h6><span class="blue-text">Amount </span> {{tx.amount}}</h6>
+                    <h6><span class="blue-text">Time </span> {{tx.timestamp | date: 'medium'}}</h6>
+                    <h6><span class="blue-text"><a href="{{'https://live.blockcypher.com/btc-testnet/tx/' + tx.txid}}" placement="top" ngbTooltip="{{tx.txid}}" target="_blank">BTC tx confirmation</a> &nbsp;</span><i class="fa fa-external-link" aria-hidden="true"></i></h6>
+                    <h6><span class="blue-text"><a href="{{'https://goerli.etherscan.io/tx/' + tx.ethHash}}" placement="top" ngbTooltip="{{tx.ethHash}}" target="_blank">ETH tx confirmation</a> &nbsp;</span><i class="fa fa-external-link" aria-hidden="true"></i></h6>
+                    <h6 *ngIf="tx.type"><span class="blue-text"><a href="{{'https://live.blockcypher.com/btc-testnet/address/' + tx.address}}" placement="top" ngbTooltip="{{tx.address}}" target="_blank">BTC Wallet Address</a> &nbsp;</span><i class="fa fa-external-link" aria-hidden="true"></i></h6>
+                  </div>
+                </div>
+              </div>
+        		</div>
+        		<div id="stats" class="container tab-pane fade"><br>
+        			              <div class="design-process-content p-5 mb-5">
+                <h4 class="semi-bold">Stats</h4>
+                <div class="bitcoin-form">
+                  <form>
+                    <div class="d-flex align-items-center flex-column pt-5 pb-5" *ngIf="burningStarted">
+                      <div *ngIf="!burningEnded" class="spinner-grow mb-4" style="width: 3rem; height: 3rem;" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div *ngIf="burningEnded" class="d-flex justify-content-center mb-4" style="width: 3rem; height: 3rem;" role="status">
+                        <span class="check-center"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                      </div>
+                      <h5>{{burningEnded ? 'Congratulations! You burned:' : 'Burning..'}}</h5>
+                      <p *ngIf="!burningEnded">This may take few mins</p>
+                      <div class="mint-text" *ngIf="burningEnded">
+                        <button type="button" class="btn btn-primary">3.40000000 BTC</button>
+                      </div>
+                    </div>
+
+                    <div class="bitcoin-form-row">
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1">You will receive your BTC at this Bitcoin Address</label>
+                        <div class="input-section">
+                          <input type="text" class="form-control form-control-lg pr-5" id="exampleFormControlInput1" readonly value="{{redeemPage.btcAddress}}">
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+
+                    <div class="bitcoin-form-row">
+                      <div class="d-flex">
+                        <button type="button" class="btn btn-primary form-control-xs align-items-center" [disabled]="burningStarted">Confirm</button>
+                      </div>
+                      <br>
+                      <div *ngIf="!burningEnded">
+                        <span>Your BTC will be sent to this address once your BTCpx is burned</span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="mint-content p-3 mt-3 mb-3 d-md-none">
+                <div class="mint-heading align-items-center d-flex">
+                    Analytics <a class="ml-3 orange-text" [routerLink]="['/transaction-history']" routerLinkActive="active">Transaction History</a>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 btc-section">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div class="mobile-row">
+                        <h6 class="light-grey-color">Total BTCpx Supply</h6>
+                        <div class="input-section border-0">
+                          <div class="row">
+                            <div class="col-sm-12 btc-btn d-flex justify-content-between align-items-center">
+                              <div class="mb-3">
+                                <input type="text" class="w-100 form-control-lg pl-3" id="m-availableBtcpxSupply" placeholder="0.0 BTCpx" readonly="" [(ngModel)]="redeemPage.availableBtcpxSupply" name="availableBtcpxSupply" #availableBtcpxSupply="ngModel">
+                                <span class="pl-3 light-grey-color text-nowrap">= {{redeemPage.usdEquivalentOfBtcpxSupply}} USD</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h6 class="light-grey-color">Contract address</h6>
+                        <h6><a href="https://goerli.etherscan.io/token/0x785E88c651356775BA4469F06C0d4378EA9d048B" target="_blank">Link to etherscan</a> &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></h6>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div class="mobile-row">
+                        <h6 class="light-grey-color">Total BTC in Custody</h6>
+                        <div class="input-section border-0">
+                          <div class="row">
+                            <div class="col-sm-12 btc-btn d-flex justify-content-between align-items-center">
+                              <div class="mb-3">
+                                <input type="text" class="w-100 form-control-lg pl-3" placeholder="0.0 BTC" readonly="" [(ngModel)]="redeemPage.availableBtcCustodyBalance" name="availableBtcCustodyBalance" #availableBtcCustodyBalance="ngModel">
+                                <span class="pl-3 light-grey-color text-nowrap">= {{redeemPage.usdEquivalentOfBtcCustodyBalance}} USD</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h6 class="light-grey-color">Hex Trust</h6>
+                        <h6><a href="https://hextrust.com/custody-services/safekeeping#safekeeping-6" target="_blank">Insurance Coverage</a> &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        		</div>
+        	</div>
+        </aside>
+      </div>
+    </section>
+  </div>
+</div>

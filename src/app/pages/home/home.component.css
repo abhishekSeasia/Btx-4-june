@@ -1,0 +1,122 @@
+.banner-right {
+    background: url(./../../../assets/images/banner-right-bg.jpg);
+    background-size: cover;
+}
+.white-color {
+    color: #fff;
+}
+.light-grey {
+    color: #c5c4c7;
+}
+
+.bg-white {
+    background: #fff;
+}
+.small-btn {
+    padding: 5px 20px;
+    border-radius: 20px;
+    background: #ff9b00;
+    margin-left: 15px;
+}
+.rounded-30 {
+    border-radius: 30px;
+}
+.line-height-26 {
+    line-height: 26px;
+}
+.line-height-32 {
+    line-height: 32px;
+}
+.tabs-ui li a {
+    color: #000;
+    border-bottom: solid 4px transparent;
+    float: left;
+}
+.tabs-ui li a:hover {
+    text-decoration: none;
+}
+.tabs-ui li a.active {
+    border-bottom: solid 4px #4b59f8;
+    color: #4b59f8;
+}
+.font-weight-xbold {
+    font-weight: 900;
+}
+.rounded-15 {
+    border-radius: 15px;
+}
+
+@media(max-width: 1199px) {
+    .full-img-mobile img {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .client-view-img img {
+        margin: 10px 0;
+    }
+    .mobi-padding-none {
+        padding: 0 !important;
+    }
+}
+@media(min-width: 768px) and (max-width: 1199px) {
+    .client-view-img img {
+        width: 100%;
+        margin: 0;
+    }
+    .sm-mode-img img {
+        width: auto;
+    }
+}
+ol, ul {
+    list-style: none;
+}
+.imp-list{
+    text-align: left;
+    }
+ul.imp-list li{
+    font-size:1rem;
+}
+.logo-row{
+    align-items: baseline;
+}
+@media(max-width: 468px) {
+    .logo-row{
+        padding-top:.5rem !important;
+        /*padding-bottom: 1rem !important;*/
+}
+}
+
+.upper-footer{
+    padding-bottom: 5rem !important;
+}
+
+.wd-90{
+    width:90%;
+}
+.pt-5{
+    padding-top:4.5rem !important;
+}
+.pb-5{
+    padding-bottom:4.5rem !important;
+}
+
+.rounded-10 {
+    border-radius: 10px !important;
+}
+.earn-dap-img{
+    padding:0 !important;
+}
+@media(max-width: 767px) {
+    h4.title{
+        margin-top:3rem;
+    }
+    .p5-small{
+        padding:1rem !important;
+    }
+}
+@media(min-width: 468px) {
+    .header-text-1::after{
+        content: "\a";
+        white-space: pre;
+    }
+}

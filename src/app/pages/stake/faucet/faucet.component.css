@@ -1,0 +1,297 @@
+/*@import url(./../mint/mint.component.css);*/
+
+.bitcoin-section {
+    width: 100%;
+}
+.mint-content {
+    background: #232132;
+    border-radius: 15px;
+}
+.mint-heading  {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.mint-heading img {
+    background: #4d5cff;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 15px;
+    width: 33px;
+}
+.mint-text p {
+    color: #fff;
+    font-size: 14px;
+}
+.mint-text p span {
+    color: #ced4da;
+}
+.mint-text button {
+    background: #4d5cff;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Css for Model */
+.modal-content {
+    background: #212529;
+    color: #fff;
+}
+.modal-content img {
+    margin: 50px 0;
+}
+.modal-header {
+    border-bottom-color: #3d3d3d;
+}
+.close {
+    color: #fff;
+}
+
+.design-process-section .text-align-center {
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+.design-process-content {
+    background: #fff;
+    border-radius: 15px;
+}
+.design-process-content h4 {
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+.design-process-content p {
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+
+.input-section {
+    position: relative;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+}
+.input-section i.fa-clone, .input-section i.fa-check-circle {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+.btc-section h6 {
+    color: #fff;
+    font-weight: 400;
+}
+.btc-section input,
+.btc-section input:focus {
+    background: #1a1724;
+    color: #fff;
+    border: solid 1px #302f3b;
+}
+
+.pr-code img {
+  border: solid 10px #4d5cff;
+    border-radius: 10px;
+    width: 200px;
+    margin: 0 auto;
+    float: none;
+}
+
+#confirmationProgress {
+  width: 100%;
+}
+.light-grey-color{
+    color: #ced4da !important;
+}
+
+.bitcoin-form-row button {
+    border-radius: 20px;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 110px;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: inherit;
+    opacity: 1;
+}
+
+.tab-pane {
+    position: relative;
+    animation-name: bottom-to-top;
+    animation-duration: 0.5s;
+}
+
+.btn-primary.disabled, .btn-primary:disabled, .btn-primary {
+    color: #fff;
+    background-color: #4d5cff;
+    border-color: #4d5cff;
+}
+.first-input-ui {
+    padding-right: 16px !important;
+    font-size: 21px;
+    font-weight: 500;
+    height: 36px;
+    width: 200px;
+}
+.first-input-ui:focus {
+    outline: none;
+    box-shadow: none;
+}
+.convert-price-text {
+    color: #000;
+    opacity: 0.3;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: -2px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+a, .blue-text {
+    color: #4d5cff;
+}
+.orange-text {
+    color: #ff9b00;
+}
+.transaction-div {
+    padding-bottom: 15px;
+}
+
+@keyframes bottom-to-top {
+    0%   { left:0px; top:300px;}
+    100% { left:0px; top:0px;}
+}
+
+@media (max-width: 767px) {
+    .mobile-row {
+        margin: 15px -15px;
+    }
+    .mobile-none {
+        display: none;
+    }
+    .first-input-ui {
+        width: 100px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .first-input-ui {
+        width: 130px;
+    }
+}
+
+.no-border, .no-border:focus {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.spinner-grow {
+    border: solid 2px #4d5cff;
+    background: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+.imp-list{
+    text-align: left;
+    font-weight: bold;
+}
+
+.nav-pills{
+
+}
+#tabs ul{
+    background-color: #4D5CFF;
+    border-radius: 27px;
+    /*height: 60px;*/
+}
+
+ul {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 999
+}
+li {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+
+}
+
+
+.nav-pills .nav-link, .connect-btn{
+    border-radius: 27px;
+    width: 120px;
+    margin: 3px;
+    text-align: center;
+    height: 54px;
+    padding:14px 0;
+}
+.connect-btn{
+    border:1px solid #fff;
+    width: 100px !important;
+}
+.bg-connect{
+    background-color: #4D5CFF;
+    height: 88px;
+    margin-left: -63px;
+    margin-right: -63px;
+}
+
+@media(max-width: 468px){
+    .bg-connect{
+        margin-left: -21px;
+        margin-right: -21px;
+        height: 150px;
+    }
+
+    .nav-pills .nav-link, .connect-btn{
+        width: 80px !important;
+    }
+    .mobile-view-tabs{
+        padding:1rem .3rem 2rem .3rem !important;
+    }
+    .connect-btn-container{
+        text-align: center;
+    }
+
+}
+@media(min-width: 469px) and (max-width: 768px){
+    .bg-connect{
+        margin-left: -31px;
+        margin-right: -31px;
+        height: 150px;
+    }
+}
+
+
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover{
+    color: #000;
+    background-color: #4D5CB2;    
+}
+.text-18 {
+    font-size: 18px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000;
+    background-color: #fff;
+}
+ 
+.border-blue3 {
+    --border-opacity: 1;
+    border-color: #4D5DFF;
+    border-color: rgba(77, 93, 255, var(--border-opacity));
+}
+
+.mint-steps img {
+    /*background: #4d5cff;*/
+    border-radius: 4px;
+    width: 40px;
+    /*min-height: 50px;*/
+}

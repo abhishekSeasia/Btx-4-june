@@ -1,0 +1,117 @@
+<section class="wrapper">
+  <div class="d-flex">
+    <app-sidebar class="app-sidebar"></app-sidebar>
+    <main class="w-100">
+      <header class="header mb-3">
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
+          <!-- <a class="navbar-brand" href="/"><img src="./assets/images/logo.png" alt="logo" /></a> -->
+          <button id="toggleSidebar" (click)="toggleSidebar()">Sidebar</button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav" *ngIf="isLandingGroupPage">
+              <li class="nav-item">
+                <a class="nav-link" href="https://proxy.btcpx.io" target="_blank">Proxy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://medium.com/btc-proxy" target="_blank">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://docs.btcpx.io/" target="_blank">Docs</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav" *ngIf="!isLandingGroupPage">
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/earn']" routerLinkActive="active">Earn</a>
+              </li>
+            </ul>
+          </div> -->
+          <div class="header-right">
+            <!-- <button type="button" class="btn btn-primary mr-1" [routerLink]="['/notifications']"> Notifications <span class="badge bg-secondary" *ngIf="totalPendingTransactions" style="background: #ff9b00 !important;">{{totalPendingTransactions}}</span></button> -->
+            <!-- <button type="button" class="btn btn-primary"
+              [ngClass]="isMetaMaskAccountConnected ? (connectToNetwork ? 'red-text' : 'orange-text') : ''"
+              (click)="open(exampleModal)">{{currentAccountAddress ? currentAccountAddress.substring(0, 5) + '...' +
+              currentAccountAddress.substring(currentAccountAddress.length - 5, currentAccountAddress.length) :
+              'Connect'}}</button> -->
+              <button type="button" class="btn btn-primary mr-2">Notifications</button>
+              <button type="button" class="btn btn-primary">Connect</button>
+          </div>
+        </nav>
+      </header>
+      <router-outlet></router-outlet>
+      <!-- <footer class="footer pt-3 pb-3">
+        <div class="container">
+          <div class="row">
+      
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="footer-icon">
+                <a href="https://www.facebook.com/groups/518259788663468/" target="_blank"><i class="fa fa-facebook"
+                    aria-hidden="true"></i></a>
+                <a href="https://twitter.com/BTC_proxy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://t.me/BTC_Proxy" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                <a href="mailto:hello@btcpx.io"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <ul class="footer-menu2">
+                <li><a href="https://proxy.btcpx.io" target="_blank">Proxy</a></li>
+                <li><a href="https://docs.btcpx.io/" target="_blank">Docs</a></li>
+                <li><a href="https://github.com/Proxy-Protocol" target="_blank">Code</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer> -->
+    </main>
+  </div>
+</section>
+
+
+
+
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Connect wallet</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img class="w-25" src="./../assets/images/meta-mask-icon.png" alt=""/>
+          <a href="" (click)="connectMetaMask()" class="align-self-center" *ngIf="metaMaskConnected && !connectingMetaMask"><h6 class="align-self-center" id="exampleModalLabel">MetaMask</h6></a>
+          <h6 *ngIf="!metaMaskConnected">Please Download MetaMask.</h6>
+          <h6 *ngIf="metaMaskConnected && connectingMetaMask"><i class='fa fa-refresh fa-spin fa-2x'></i></h6>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+<ng-template #exampleModal let-modal>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Connect wallet</h5>
+      <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body text-center">
+      <img class="w-25" src="./../assets/images/meta-mask-icon.png" alt="" />
+      <a href="javascript:void(0);" (click)="connectMetaMask()" class="align-self-center"
+        *ngIf="metaMaskConnected && !isMetaMaskAccountConnected && !connectingMetaMask">
+        <h6 class="align-self-center" id="exampleModalLabel">MetaMask</h6>
+      </a>
+      <h6 *ngIf="!metaMaskConnected">Please Download MetaMask.</h6>
+      <h6 *ngIf="isMetaMaskAccountConnected && connectToNetwork">Please Connect to {{connectToNetwork === '0x1' ? 'Main
+        Network' : 'Goerli Test Network'}}.</h6>
+      <h6 *ngIf="isMetaMaskAccountConnected && !connectToNetwork">{{currentAccountAddress}}</h6>
+      <h6 *ngIf="metaMaskConnected && !isMetaMaskAccountConnected && connectingMetaMask"><i
+          class='fa fa-refresh fa-spin fa-2x'></i></h6>
+    </div>
+  </div>
+</ng-template>

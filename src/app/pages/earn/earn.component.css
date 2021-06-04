@@ -1,0 +1,320 @@
+.bitcoin-section {
+    width: 100%;
+}
+.mint-content {
+    background: #232132;
+    border-radius: 15px;
+}
+.mint-text img {
+    background: #4d5cff;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 15px;
+    width: 33px;
+}
+.mint-heading  {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.mint-text p {
+    color: #fff;
+    font-size: 14px;
+}
+.mint-text p span {
+    color: #5c5a71;
+}
+.mint-text span {
+    color: #5c5a71;
+}
+.mint-text button {
+    background: #4d5cff;
+    border-radius: 20px;
+    font-size: 14px;
+}
+hr {
+    background: #3d3d3d
+}
+.earn-table-ui th {
+    color: #5c5a71;
+    font-weight: normal;
+    padding: 25px 15px;
+    font-weight: 500;
+}
+.earn-table-ui tbody td {
+    background: #fff;
+    padding: 7px 15px;
+    margin-bottom: 0;
+    color: #000;
+    border-bottom: solid 1px #d7d7d7;
+    border-right: solid 1px #d7d7d7;
+    font-weight: 600;
+}
+.earn-table-ui tbody td img {
+    width: 40px;
+}
+.earn-table-ui tbody td p {
+    margin-bottom: 0;
+}
+.earn-table-ui tbody tr:last-child td {
+    border-bottom: 0;
+}
+.earn-table-ui tbody tr td:last-child {
+    border-right: 0;
+}
+.earn-table-ui tbody td button {
+    background: #4d5cff;
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    padding: 1px 12px;
+}
+.earn-table-ui tbody td .create-area {
+    /*border-right: solid 1px #d7d7d7;*/
+    padding: 15px 0;
+}
+.earn-table-ui tbody td:last-child .create-area {
+    border-right: 0;
+}
+.earn-table-ui tbody tr:first-child td:first-child {
+    border-radius: 15px 0 0 0;
+}
+.earn-table-ui tbody tr:first-child td:last-child {
+    border-radius: 0 15px 15px 0;
+}
+.earn-table-ui tbody tr:last-child td:first-child {
+    border-radius: 15px 0 0 15px;
+}
+.earn-table-ui tbody tr:last-child td:last-child {
+    border-radius: 0 15px 15px 0;
+}
+
+.light-grey-color{
+    color: #5c5a71 !important;
+}
+a {
+    color: #4d5cff;
+}
+
+.mobile-table-scroll {
+    overflow-x: auto;
+}
+.pool-form {
+    margin:1rem;
+}
+.form-group {
+    width: 100%;
+}
+.card-header{
+    font-weight: 600;
+}
+.stake-btn{
+    border-radius: 27px;
+    height: 54px;
+    width: 150px;
+    padding: 14px 0;
+}
+
+.text-black {
+    color:black;
+}
+.pd-2{
+    padding:2rem;
+}
+.border-right-long{
+    border-right: solid 1px #d7d7d7;
+}
+@media (min-width: 768px){
+    .btn-add-liquidity{
+        height: 40px;
+    }
+}
+.m-0{
+    margin: 0;
+}
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+.text-gray-900 {
+    --tw-text-opacity: 1;
+    color: rgba(17,24,39,var(--tw-text-opacity));
+}
+.text-gray-500 {
+    --tw-text-opacity: 1;
+    color: rgba(107,114,128,var(--tw-text-opacity));
+}
+@media (max-width: 468px){
+    .stake-block{
+        font-size:14px;
+    }
+    .text-lg {
+        font-size: 1rem;
+    }
+    
+}
+.font-medium {
+    font-weight: 500;
+}
+.text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+.max-w-xl {
+    max-width: 36rem;
+}
+.blue-text {
+    color: #4d5cff;
+}
+
+.liquidityBtn {
+    border-radius: 20px;
+    padding: 3px 15px;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    min-width: 110px;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #4d5cff;
+    border-color: #4d5cff;
+}
+.centered{
+    margin:0 auto;
+}
+.pdr-0{
+    padding-right:0;
+}
+.round-15{
+    border-radius: 15px;
+}
+
+.onoffswitch {
+    position: relative; width: 120px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    /*border: 2px solid #999999; */
+    border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "STAKE";
+    padding-left: 10px;
+    background-color: #4d5cff; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "UNSTAKE";
+    padding-right: 10px;
+    background-color: #ff9b00; color: #fff;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 80px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+/* Css for Model */
+.modal-content {
+    background: #212529;
+    color: #fff;
+}
+.modal-content img {
+    margin: 50px 0;
+}
+.modal-content i {
+    color: #4d5cff;
+}
+.modal-header {
+    border-bottom-color: #3d3d3d;
+}
+.close {
+    color: #fff;
+}
+
+/**3June**/
+.vault-outer {
+    background: #242424;
+}
+.orange-card {
+    border: 2px solid #FF962F;
+    background: none;
+    min-width: 150px;
+}
+.dark-table {
+    color: #fff;
+    background: none;
+}
+.dark-table .description {
+    color: #7D7D7D;
+    font-weight: 400;
+}
+.dark-table td, .dark-table th {
+    border: none;
+}
+.font-600 {
+    font-weight: 600;
+}
+.vault-dropdown {
+    min-width: 130px;
+}
+.vault-dropdown button, .vault-dropdown button:focus {
+    background: #fff;
+    border-radius: 30px;
+    min-height: 55px;
+    color: #1B1B1B;
+    outline: none;
+    box-shadow: none;
+}
+.font-14 {
+    font-size: 14px;
+}
+.font-300 {
+    font-weight: 300;
+}
+.dark-table tr {
+    border-bottom: 1px solid #413F4E;
+}
+.dark-table h4 {
+    width: max-content;
+    position: relative;
+}
+.dark-table h4::after {
+    background-color: #F26823;
+    height: 2px;
+    content: '';
+    position: absolute;
+    bottom: -.80rem;
+    left: 0;
+    width: 100%;
+}
+.dark-table td, .dark-table th {
+    vertical-align: middle;
+}

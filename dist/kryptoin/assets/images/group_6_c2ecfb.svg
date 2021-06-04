@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>C2ECFBE5-94E0-4D65-AD2C-2AE566E12FBD</title>
+    <defs>
+        <circle id="path-1" cx="15" cy="15" r="15"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Active-Geysers" transform="translate(-158.000000, -318.000000)">
+            <g id="Group-4" transform="translate(84.000000, 258.000000)">
+                <g id="Mask" transform="translate(20.000000, 21.000000)">
+                    <g id="Group-6" transform="translate(54.000000, 39.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <circle stroke="#D7D7D7" cx="15" cy="15" r="14.5"></circle>
+                        <g id="Logo" mask="url(#mask-2)">
+                            <g transform="translate(3.000000, 3.000000)">
+                                <polygon id="Path" fill="#343434" fill-rule="nonzero" points="11.8669065 2.66453526e-15 11.6942446 0.575539568 11.6942446 16.4028777 11.8669065 16.5755396 19.2338129 12.2014388"></polygon>
+                                <polygon id="Path" fill="#8C8C8C" fill-rule="nonzero" points="11.8669065 2.66453526e-15 4.5 12.2014388 11.8669065 16.5755396 11.8669065 8.86330935"></polygon>
+                                <polygon id="Path" fill="#3C3C3B" fill-rule="nonzero" points="11.8669065 17.9568345 11.7517986 18.0719424 11.7517986 23.7122302 11.8669065 24 19.2338129 13.6402878"></polygon>
+                                <polygon id="Path" fill="#8C8C8C" fill-rule="nonzero" points="11.8669065 24 11.8669065 17.9568345 4.5 13.6402878"></polygon>
+                                <polygon id="Path" fill="#141414" fill-rule="nonzero" points="11.8669065 16.5755396 19.2338129 12.2014388 11.8669065 8.86330935"></polygon>
+                                <polygon id="Path" fill="#393939" fill-rule="nonzero" points="4.5 12.2014388 11.8669065 16.5755396 11.8669065 8.86330935"></polygon>
+                                <rect id="Rectangle-Copy-2" fill="none" x="0" y="0" width="24" height="24" rx="12"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

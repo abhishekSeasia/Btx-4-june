@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~font-awesome/css/font-awesome.css"; 
+@import "./dark-theme.css"; 
+
+.clickable{
+	cursor:pointer;
+
+}
+.pd-0 {
+	padding:0;
+}
+
+.primary-btn-ui {
+    padding: 16px 45px;
+    background: #4d5cff;
+    border: 0;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+.primary-btn-ui:focus,.primary-btn-ui:hover {
+    background: #606cef;
+}
+.primary-color{
+  color:#ff9b00 !important;
+}
+.primary-btn-color{
+  color:#606cef !important;
+}
+.fifth {
+  border-color: #ff9b00;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+.fifth:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #ff9b00;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.fifth:hover {
+  color: #fff;
+}
+.fifth:hover:after {
+  width: 110%;
+}
+.ml-06{
+	margin-left:.6rem;
+}
+/**shav**/
+.app-sidebar {
+  width: 300px;
+  display: block;
+  flex-basis: 300px;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.2s;
+}
+.orange-btn {
+  background-color: #FF962F !important;
+  display: inline-flex;
+  max-width: 170px;
+  min-width: 170px !important;
+}
+.edit-dots a svg{
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+/**shav**/
+#toggleSidebar {
+  display: none;
+}
+@media screen and (max-width: 991.77px) {
+  .app-sidebar {
+    position: absolute;
+    margin-left: -300px;
+    z-index: 9;
+  }
+  .sidebar-opened .app-sidebar {
+    margin-left: 0px;
+  }
+  #toggleSidebar {
+    display: block;
+  }
+}
